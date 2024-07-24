@@ -24,11 +24,6 @@ except Exception:
 import aio.main_bot
 
 
-
-
-
-
-
 if __name__ == '__main__':
 
     os.chdir(get_script_dir())
