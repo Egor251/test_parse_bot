@@ -1,0 +1,7 @@
+aiogram
+sqlalchemy
+python-dotenv
+beautifulsoup4
+requests
+pymystem3
+loguru
