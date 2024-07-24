@@ -5,6 +5,11 @@
 
 Просто скачать и распаковать, дальше он сам
 
+Если вдруг нет:
+cd <путь к директории со скриптом>
+python -m pip install -r requirements.txt
+python main.py
+
 Запуск:
 python main.py
 
