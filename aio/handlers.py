@@ -43,14 +43,14 @@ async def start_handler(msg: Message):
 
 
 @router.message(Command("latest"))  # Обработка команды /start, отправленной боту
-async def start_handler(msg: Message):
+async def latest_handler(msg: Message):
     logger.info(f'{msg.chat.id} /latest')
     news = db.crud.select_latest()
     await msg.answer(f'{news.time} - {news.title}\n\n{news.link}')
 
 
 @router.message(Command("search"))  # Обработка команды /search, отправленной боту
-async def start_handler(msg: Message):
+async def search_handler(msg: Message):
     logger.info(f'{msg.chat.id} {msg.text}')
 
     try:
@@ -69,6 +69,6 @@ async def start_handler(msg: Message):
 
 
 @router.message(Command("help"))  # Обработка команды /help, отправленной боту
-async def start_handler(msg: Message):
+async def help_handler(msg: Message):
     logger.info(f'{msg.chat.id} /help')
     await msg.answer(config.help_message)
